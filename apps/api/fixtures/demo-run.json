@@ -1,0 +1,31 @@
+{
+  "events": [
+    {
+      "type": "status",
+      "label": "Creating cloud agent",
+      "timestamp": "2026-05-24T12:00:00.000Z"
+    },
+    {
+      "type": "status",
+      "label": "Writing fit report",
+      "timestamp": "2026-05-24T12:00:02.000Z"
+    },
+    {
+      "type": "status",
+      "label": "Opening PR",
+      "timestamp": "2026-05-24T12:00:05.000Z"
+    }
+  ],
+  "result": {
+    "runId": "demo-run-id",
+    "status": "succeeded",
+    "prUrl": "https://github.com/example/resume/pull/1",
+    "branch": "cursor/tailor-acme-frontend",
+    "outputPaths": {
+      "fitReport": "jobs/acme-corp/frontend-engineer/fit-report.md",
+      "tailoredResume": "jobs/acme-corp/frontend-engineer/tailored-resume.md",
+      "changeSummary": "jobs/acme-corp/frontend-engineer/change-summary.md"
+    },
+    "warnings": []
+  }
+}

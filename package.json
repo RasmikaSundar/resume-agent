@@ -1,0 +1,24 @@
+{
+  "name": "resume-agent",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "pnpm --filter @resume-agent/shared build && pnpm -r build",
+    "typecheck": "pnpm --filter @resume-agent/shared build && pnpm -r typecheck",
+    "test": "pnpm -r test",
+    "dev:api": "pnpm --filter @resume-agent/api dev",
+    "dev:extension": "pnpm --filter @resume-agent/extension dev",
+    "build:extension": "pnpm --filter @resume-agent/extension build"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  },
+  "packageManager": "pnpm@10.11.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild", "sqlite3"]
+  }
+}
